@@ -6,9 +6,28 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+  </head>
   <body>
-    <%= yield %>
+  	<header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <%= link_to "Badass Video Productions", '#', id: "logo" %>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Home",   '/' %></li>
+            <li><%= link_to "Contact Us",   'static_pages/contact' %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  	<div>
+    	<%= yield %>
+    </div>
   </body>
 </html>
