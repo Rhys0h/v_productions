@@ -1,52 +1,45 @@
 <% provide(:title, "Video Productions") %>
 <html>
 	<body>	
-		<div class="bs-example">
-		    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
-		        <!-- Carousel indicators -->
-		        <ol class="carousel-indicators">
-		            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		            <li data-target="#myCarousel" data-slide-to="1"></li>
-		            <li data-target="#myCarousel" data-slide-to="2"></li>
-		        </ol>   
-		        <!-- Wrapper for carousel items -->
-		        <div class="carousel-inner">
-		            <div class="item active">
-		                <%= image_tag("surf_girl.jpeg") %>
-		                <div class="carousel-caption">
-		                	<h3>Surfing girl</h3>
-		                	<p>She loves to surf!</p>
-		                </div>
-		            </div>
-		            <div class="item">
-		                <%= image_tag("camera_set.jpeg") %>
-		            </div>
-		            <div class="item">
-		                <%= image_tag("workspace.jpeg") %>
-		            </div>
-		        </div>
-		        <!-- Carousel controls -->
-		        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-		            <span class="glyphicon glyphicon-chevron-left"></span>
-		        </a>
-		        <a class="carousel-control right" href="#myCarousel" data-slide="next">
-		            <span class="glyphicon glyphicon-chevron-right"></span>
-		        </a>
-		    </div>
+	    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="false">
+	        <!-- Wrapper for carousel items -->
+	        <div class="carousel-inner">
+	            <div class="item active">
+	                <%= image_tag("surf_girlR.jpeg") %>
+	                <div class="carousel-caption">
+	                	<h3>Surfing girl</h3>
+	                	<p>She loves to surf!</p>
+	                </div>
+	            </div>
+	            <div class="item">
+	                <%= image_tag("camera_setR.jpeg") %>
+	            </div>
+	            <div class="item">
+	                <%= image_tag("workspaceR.jpeg") %>
+	            </div>
+	        </div>
+	        <!-- Carousel controls -->
+	        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+	            <span class="glyphicon glyphicon-chevron-left"></span>
+	        </a>
+	        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+	            <span class="glyphicon glyphicon-chevron-right"></span>
+	        </a>
 		</div>
-		<!-- <div class="scrollshow">
+		<div class="scrollshow">
 			<iframe width="200" height="113" src="https://www.youtube.com/embed/S-9rWVR2G7Q?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  			<iframe width="200" height="113" src="https://www.youtube.com/embed/1bzPfj3-FT8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  			<iframe width="200" height="113" src="https://www.youtube.com/embed/Gl-Lx69ucA8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  			<iframe width="200" height="113" src="https://www.youtube.com/embed/hyk6YOT_eZ0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  			<iframe width="200" height="113" src="https://www.youtube.com/embed/bxiREBXzpZY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
   			<iframe width="200" height="113" src="https://www.youtube.com/embed/S-9rWVR2G7Q?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-  			<iframe width="200" height="113" src="https://www.youtube.com/embed/S-9rWVR2G7Q?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-  			<iframe width="200" height="113" src="https://www.youtube.com/embed/S-9rWVR2G7Q?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-  			<iframe width="200" height="113" src="https://www.youtube.com/embed/S-9rWVR2G7Q?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-  			<iframe width="200" height="113" src="https://www.youtube.com/embed/S-9rWVR2G7Q?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-  			<iframe width="200" height="113" src="https://www.youtube.com/embed/S-9rWVR2G7Q?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-  			<iframe width="200" height="113" src="https://www.youtube.com/embed/S-9rWVR2G7Q?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-  			<iframe width="200" height="113" src="https://www.youtube.com/embed/S-9rWVR2G7Q?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  			<iframe width="200" height="113" src="https://www.youtube.com/embed/1bzPfj3-FT8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  			<iframe width="200" height="113" src="https://www.youtube.com/embed/Gl-Lx69ucA8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  			<iframe width="200" height="113" src="https://www.youtube.com/embed/hyk6YOT_eZ0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  			<iframe width="200" height="113" src="https://www.youtube.com/embed/bxiREBXzpZY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
   		</div>
   		<div class="body">
-  			This is our video production website. There are many like it, but<br> this<br> is<br> our <br>own.
-  		</div> -->
+  			<p>This is our video production website. There are many like it, but this is our own.</p>
+  		</div>
 	</body>
 </html>
